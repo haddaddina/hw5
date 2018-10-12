@@ -4,7 +4,16 @@ function setup() {
 
 function draw() {
   background(220);
-  for(var i = 10; i < 400; i = i + 10){
-      line(200, i, i, 200);
+  var startX = 195;
+	var endX = 205
+  for(var i = 10; i <= 200; i = i + 10){
+    line(startX, i, endX, i);
+    startX = startX - 10
+    endX = endX + 10
+      }
+  for(var i = 210; i <= 400; i = i + 10){
+    line(startX, i, endX, i);
+    startX = startX + 10
+    endX = endX - 10
       }
 }
